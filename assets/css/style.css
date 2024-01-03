@@ -1,10 +1,11 @@
 * {
     box-sizing: border-box;
+    /*border: 1px solid red;*/
   }
   
   body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
   }
@@ -22,3 +23,180 @@
     margin: 0;
   }
   
+  /* navigation bar styling*/
+
+  header {
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 26px;
+    z-index: 10;
+      
+  }
+  
+  header * {
+    display: inline-block;
+  }
+  
+
+  header li {
+    padding: 5px;
+    
+  }
+
+  header li a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid;
+  }
+
+  header img {
+    height: 42px;
+  
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+  }
+
+/* hero image styling */
+
+.hero-banner {
+  background-image: url(../images/willian-justen-de-vasconcellos-2xa_CKoSij8-unsplash.jpg);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.hero-title {
+  background-color: white;
+  margin: 20px 50px;
+  padding: 3px 7px;
+}
+  
+/* about me section */
+
+.page-section {
+  display: flex;
+  padding: 20px;
+  
+}
+
+section h2 {
+  padding: 15px;
+  flex: 1;
+  text-align: end;
+  
+}
+
+.mainContent {
+  padding: 15px;
+  border-left: 2px solid;
+  flex: 4;
+}
+
+/* work section grid */
+
+#workGrid {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1 fr;
+  grid-template-rows: 450px 150px 150px;
+  grid-template-areas: 
+  "surfReport surfReport"
+  "ledWall calculator"
+  "pastelPuzzles runBuddy";
+}
+
+#surfReport {
+  grid-area: surfReport;
+  background-image: url(../images/jennifer-kalenberg-LfIhMM8XEQ4-unsplash.jpg);
+ 
+}
+
+#ledWall {
+  grid-area: ledWall;
+  background-image: url(../images/declan-sun-vVSLLxc5pY8-unsplash.jpg);
+  
+}
+
+#calculator {
+  grid-area: calculator;
+  background-image: url(../images/mery-khachatryan-jKj8q0gXvkk-unsplash.jpg);
+  
+}
+
+#pastelPuzzles {
+  grid-area: pastelPuzzles;
+  background-image: url(../images/marissa-grootes-O8HHFS7InmA-unsplash\ \(1\).jpg);
+  
+}
+
+#runBuddy {
+  grid-area: runBuddy;
+  background-image: url(../images/mattyas-lamar-UbnM_RWN61Y-unsplash.jpg);
+  
+}
+
+.workGridArea {
+  background-position: center;
+  cursor: pointer;
+  background-size: cover;
+  align-content: end;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* work section styling of the heading and text */
+
+.workText {
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  padding: 5px 7px;
+}
+.workText p {
+  font-size: small;
+
+}
+
+/*contact me section*/
+
+.contactDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+ .contactDetails li {
+  display:inline-block;
+
+  
+} 
+.contactDetails ul {
+  list-style-type: none;
+  
+
+} 
+
+.contactDetails li a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid;
+}
+
