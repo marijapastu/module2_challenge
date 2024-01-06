@@ -1,12 +1,11 @@
 * {
     box-sizing: border-box;
-    /* border: 1px solid red; */
   }
   
   body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Helvetica Neue' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
   }
   
@@ -23,7 +22,11 @@
     margin: 0;
   }
   
-  /* navigation bar styling*/
+  /* navigation bar styling */
+
+  /* header {
+    position: relative;
+  }  */
 
   nav {
     background-color: white;
@@ -34,25 +37,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 26px;
+    padding: 5px 20px;
     z-index: 10;
       
   }
-  
-  nav * {
-    display: inline-block;
-  }
-  
 
-  header li {
+  nav .links {
+    display: flex;
     padding: 10px;
-  
+    gap: 2rem;
   }
 
   header li a {
     text-decoration: none;
     color: black;
     border-bottom: 2px solid;
+
   }
   
   header li a:hover {
@@ -61,7 +61,7 @@
 
   header img {
     height: 42px;
-  
+    
   }
 
   nav ul {
@@ -180,13 +180,14 @@ section h2 {
   position: absolute;
   bottom: 10px;
   padding: 5px 7px;
+  color: black;
 }
 .workText p {
   font-size: small;
 
 }
 
-/*contact me section*/
+/* contact me section */
 
 .contactDetails {
   display: flex;
@@ -231,9 +232,58 @@ section h2 {
     "runBuddy";
   }
 
-  section h2 {
-    font-size: large;
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.02em;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+
+  .contactDetails li {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  } 
+
+}
+
+@media only screen and (max-width: 475px)  {
+
+  h1 {
+    font-size: 1.1em;
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  h3 {
+    font-size: 0.7em;
+  }
+
+  nav .links {
+    /* display: block; */
+    padding: 2px; 
+    font-size: 0.8em;
+    gap: 1em;
     
+  }
+
+  .contactDetails li {
+    font-size: 0.8em;
+  }
+
+  nav {
+    position:static;
+
   }
 
 }
