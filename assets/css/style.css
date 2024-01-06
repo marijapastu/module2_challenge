@@ -219,6 +219,17 @@ section h2 {
 
 
 /* media queries*/
+
+@media only screen and (max-width: 768px)  {
+
+  .contactDetails li {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  } 
+
+}
+
 @media only screen and (max-width: 600px)  {
   
   #workGrid{
@@ -245,16 +256,6 @@ section h2 {
   }
 }
 
-@media only screen and (max-width: 768px)  {
-
-  .contactDetails li {
-    display: block;
-    text-align: center;
-    padding: 5px;
-  } 
-
-}
-
 @media only screen and (max-width: 475px)  {
 
   h1 {
@@ -270,7 +271,6 @@ section h2 {
   }
 
   nav .links {
-    /* display: block; */
     padding: 2px; 
     font-size: 0.8em;
     gap: 1em;
@@ -282,7 +282,7 @@ section h2 {
   }
 
   nav {
-    position:static;
+    position: static;
 
   }
 
